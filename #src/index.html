@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gravity</title>
+  @@include('_styles.html')
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <img class="logo" src="./img/logo.svg">
+        <button class="search-btn"><img src="./img/icons/search-icon.svg"></button>
+        <nav class="menu">
+          <button class="burger-menu">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+          </button>
+          <ul class="menu__list">
+            <li class="menu__list-item">Home</li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <div class="search-box">
+    <input class="search" type="text">
+  </div>
+
+  <section class="home" id="home">
+    <div class="container">
+      <div class="home__inner">
+        <div class="home__info">
+          <h2>Work around you and your team</h2>
+          <p>From ads that dance or sing to MTV-like commercials, online advertisers are now using a new type of
+            technology “rich media” to attract consumers.
+          </p>
+          <button class="home__info-btn">Get started</button>
+          <div class="loader">
+            <span class="first-value">01</span>
+            <progress class="loader__progress" value="50" max="100"></progress>
+            <span class="second-value">03</span>
+          </div>
+        </div>
+        <div class="home__placeholder">
+          <img src="./img/home-placeholder.png" class="placeholder-img">
+          <img src="./img/video-bg.png" alt="Video background" class="home__video">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about__inner">
+        <div class="about__placeholder">
+          <img src="./img/about-placeholder.png">
+        </div>
+        <div class="about__info">
+          <h2>We solve digital problems with an outstanding creative flare</h2>
+          <p>The best time to view the moon, obviously, is at night when there are few clouds and the weather is
+            accommodating for a long and lasting study.</p>
+          <p>For most of us, the idea of astronomy is something we directly connect to “stargazing”, telescopes and
+            seeing magnificent displays in the heavens.</p>
+          <div class="user">
+            <img class="user__photo" src="./img/user-photo.png" />
+            <p class="user__info">
+              <span class="user__name author-name">Akmal Akbarzoda</span><br />
+              <span class="user__position">Co-Founder & CEO</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="service" id="service">
+    <div class="container">
+      <div class="service__inner">
+        <span class="label">— Services</span>
+        <div class="service__top">
+          <h2 class="title service__title">We love work hard and explore new things that’s why we cover lot of things.
+            Check
+            our service list and view details</h2>
+          <ul class="service__menu">
+            <li class="service__menu-item">
+              <a class="service__menu-link" href="#">Multimedia</a>
+            </li>
+            <li class="service__menu-item">
+              <a class="service__menu-link" href="#">Interactive Design</a>
+            </li>
+            <li class="service__menu-item">
+              <a class="service__menu-link" href="#">Packaging</a>
+            </li>
+            <li class="service__menu-item">
+              <a class="service__menu-link" href="#">Branding</a>
+            </li>
+            <li class="service__menu-item">
+              <a class="service__menu-link" href="#">Creative Strategy</a>
+            </li>
+            <li class="service__menu-item">
+              <a class="service__menu-link" href="#">UX/UI</a>
+            </li>
+            <li class="service__menu-item">
+              <a class="service__menu-link" href="#">Coding</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- <div class="service__slider">
+
+          <div class="service__slider-item">
+            <img src="./img/about-placeholder.png" alt="About placeholder">
+          </div>
+          <div class="sevice__slider-item">
+            <img src="./img/home-placeholder.png" alt="Home placeholder">
+          </div>
+
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="container">
+      <div class="features__inner">
+        <div class="features__photo">
+          <img src="./img/features-1.png">
+          <img src="./img/features-2.png">
+        </div>
+        <div class="features__info">
+          <h2 class="title features__title">Well thought with super easy to use</h2>
+          <p>As we approached the palace I could see through the great windows of the first floor the brilliantly
+            illuminated audience chamber of Than Kosis. The immense hall was crowded with nobles and their women.</p>
+          <ul class="features__list">
+            <li class="features__list-item">
+              <img class="features__list-icon" src="./img/icons/icon-100.svg">
+              <span class="features__list-name">Ultimate Result</span>
+            </li>
+            <li class="features__list-item">
+              <img class="features__list-icon" src="./img/icons/bag-icon.svg">
+              <span class="features__list-name">Minimal Design</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="works">
+    <div class="container">
+      <div class="works__inner">
+        <span class="label">— Our works</span>
+        <div class="works__header">
+          <h2 class="title">Discover our Work</h2>
+          <ul class="works__nav">
+            <li class="works__nav-item">
+              <a class="works__nav-link works__nav-link--active" href="#">All</a>
+            </li>
+            <li class="works__nav-item">
+              <a class="works__nav-link" href="#">Branding</a>
+            </li>
+            <li class="works__nav-item">
+              <a class="works__nav-link" href="#">Web</a>
+            </li>
+            <li class="works__nav-item">
+              <a class="works__nav-link" href="#">Development</a>
+            </li>
+            <li class="works__nav-item">
+              <a class="works__nav-link" href="#">Film</a>
+            </li>
+          </ul>
+        </div>
+        <div class="works__content">
+          <ul class="works__list">
+            <li class="works__list-item">
+              <a class="works__list-link" href="#">
+                <img class="works__list-image" src="./img/works/work-1.png">
+              </a>
+            </li>
+            <li class="works__list-item">
+              <a class="works__list-link" href="#">
+                <img class="works__list-image" src="./img/works/work-2.png">
+              </a>
+            </li>
+            <li class="works__list-item">
+              <a class="works__list-link" href="#">
+                <img class="works__list-image" src="./img/works/work-3.png">
+              </a>
+            </li>
+            <li class="works__list-item">
+              <a class="works__list-link" href="#">
+                <img class="works__list-image" src="./img/works/work-4.png">
+              </a>
+            </li>
+            <li class="works__list-item">
+              <a class="works__list-link" href="#">
+                <img class="works__list-image" src="./img/works/work-5.png">
+              </a>
+            </li>
+            <li class="works__list-item">
+              <a class="works__list-link" href="#">
+                <img class="works__list-image" src="./img/works/work-6.png">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="works__footer">
+          <p class="works__footer-text">It picks up the words on the page and displays ads that are similar to those
+            words. Then when someone either performs an action or clicks on your page you will get paid.</p>
+          <button class="works__more-button">See our works</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <div class="container">
+      <div class="testimonials__inner">
+        <span class="label">— Testimonials</span>
+        <div class="testimonials__content">
+          <div class="testimonials__info">
+            <p class="testimonials__text title">"Professionals in their craft! All products were super great with strong
+              attention to details, and overall vibe"</p>
+            <p class="testimonials__author author-name">Polina Kuzina</p>
+            <p class="testimonials__position">Manager at Craftwork</p>
+            <div class="testimonials__navigation">
+              <button class="prev"><img src="./img/icons/arrow.svg" alt="Prev arrow"></button>
+              <button class="next"><img src="./img/icons/arrow.svg" alt="Next arrow"></button>
+            </div>
+          </div>
+          <div class="testimonials__image">
+            <img src="./img/Polina-Kuzina.png" alt="Polina Kuzina">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="clients">
+    <div class="container">
+      <div class="clients__inner">
+        <div class="clients__header">
+          <p class="title clients__title">Our Clients</p>
+          <span class="label">— We worked with</span>
+          <p class="clients__text">Our favorite brands are our friends! We help them to achieve their goals, they help
+            us to stay sharp.</p>
+        </div>
+        <div class="brands">
+          <img class="brands__logo" src="./img/clients/tinder.svg" alt="Tinder">
+          <img class="brands__logo" src="./img/clients/apple.svg" alt="Apple">
+          <img class="brands__logo" src="./img/clients/xiaomi.svg" alt="Xiaomi">
+          <img class="brands__logo" src="./img/clients/nike.svg" alt="Nike">
+          <img class="brands__logo" src="./img/clients/amd.svg" alt="Amd">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__top-header">
+          <img src="./img/logo-footer.svg" alt="Logo" class="footer__logo">
+          <div class="footer__menu">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item"><a href="#" class="footer__menu-link">Travel</a></li>
+              <li class="footer__menu-item"><a href="#" class="footer__menu-link">Explore</a></li>
+              <li class="footer__menu-item"><a href="#" class="footer__menu-link">Works</a></li>
+              <li class="footer__menu-item"><a href="#" class="footer__menu-link">About Us</a></li>
+              <li class="footer__menu-item"><a href="#" class="footer__menu-link">Contacts</a></li>
+            </ul>
+          </div>
+          <div class="footer__email-form">
+            <input type="email" placeholder="Your email" name="footer-email" class="footer__email-form__input">
+            <input type="button" value="Send" class="footer__email-form__send">
+          </div>
+        </div>
+        <div class="footer__content">
+          <ul class="footer__content__nav">
+            <li class="footer__content__item"><a href="" class="footer__content__link">Terms</a></li>
+            <li class="footer__content__item"><a href="" class="footer__content__link">Promo</a></li>
+            <li class="footer__content__item"><a href="" class="footer__content__link">Download</a></li>
+            <li class="footer__content__item"><a href="" class="footer__content__link">News</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  @@include('_scripts.html')
+</body>
+
+</html>
